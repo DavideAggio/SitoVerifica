@@ -114,6 +114,9 @@ function consegna() {
         button.disabled = true;
     });
 
+    // Salva lo stato di consegna
+    localStorage.setItem("consegnato", "true");
+
     // Salva le risposte nel file .txt
     salvaRisposteNelFile();
 }
@@ -148,3 +151,6 @@ function salvaRisposteNelFile() {
             link.click();
         });
 }
+
+// Esegui il controllo della consegna quando la pagina viene caricata
+document.addEventListener('DOMContentLoaded', verificaConsegna);
