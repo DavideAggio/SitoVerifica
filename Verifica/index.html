@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifica</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="function.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="timer" id="timer"></div>
+        <h1>Verifica</h1>
+        <div class="button-container">
+            <button onclick="vaiAPagina('domanda_aperta.html?id=1')">Domanda 1</button>
+            <button onclick="vaiAPagina('domanda_aperta.html?id=2')">Domanda 2</button>
+            <button onclick="vaiAPagina('domanda_aperta.html?id=3')">Domanda 3</button>
+            <button onclick="vaiAPagina('crocetta.html?id=a')">Testo A</button>
+            <button onclick="vaiAPagina('crocetta.html?id=b')">Testo B</button>
+            <button id="consegna-button" onclick="consegna()">Fine</button>
+            <div id="consegna-msg" style="display: none; font-size: 24px; color: green; text-align: center; margin-top: 20px;">Consegnato</div>
+        </div>
+    </div>
+</body>
+</html>

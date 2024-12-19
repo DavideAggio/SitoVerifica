@@ -1,0 +1,25 @@
+{
+  "domandeAperte": [
+    { "id": 1, "testo": "Descrivi le principali cause della Prima Guerra Mondiale." },
+    { "id": 2, "testo": "Spiega l'importanza della Rivoluzione Industriale." },
+    { "id": 3, "testo": "Quali sono le conseguenze del colonialismo sulle società indigene?" }
+  ],
+  "testiCrocette": [
+    {
+      "id": "a",
+      "testo": "Il Rinascimento è stato un movimento culturale iniziato in Italia.",
+      "domande": [
+        { "id": 1, "testo": "Dove è iniziato il Rinascimento?", "opzioni": ["Italia", "Francia", "Spagna", "Germania"] },
+        { "id": 2, "testo": "Quando è iniziato?", "opzioni": ["XIV secolo", "XV secolo", "XVI secolo", "XVII secolo"] }
+      ]
+    },
+    {
+      "id": "b",
+      "testo": "La Seconda Guerra Mondiale è durata dal 1939 al 1945.",
+      "domande": [
+        { "id": 1, "testo": "Quando è iniziata?", "opzioni": ["1938", "1939", "1940", "1941"] },
+        { "id": 2, "testo": "Quando è terminata?", "opzioni": ["1944", "1945", "1946", "1947"] }
+      ]
+    }
+  ]
+}

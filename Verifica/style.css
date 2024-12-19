@@ -1,0 +1,164 @@
+/* Reset CSS per uniformare il layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 700px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2e8b57;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:focus {
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+textarea:focus {
+    border-color: #4CAF50;
+}
+
+.caratteri {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.timer {
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 20px;
+    color: #2e8b57;
+}
+
+.back-button {
+    background-color: #ff6347;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #e55347;
+}
+
+/* Aggiustamenti per domande a crocette */
+#domande-crocette div {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+#domande-crocette p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin: 8px 0;
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="radio"]:checked + label {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+#domande-crocette {
+    margin-top: 20px;
+    padding-left: 15px;
+}
+
+#domande-crocette div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    padding-left: 20px;
+}
+
+
+@media (min-width: 768px) {
+    .button-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    button {
+        width: 180px;
+    }
+
+    .back-button {
+        width: auto;
+    }
+}
